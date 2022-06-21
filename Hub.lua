@@ -1,4 +1,4 @@
-
+--Version 1.2
 function RunScript()
 local player = game.Players.LocalPlayer
 local Animate = player.Character.Animate
