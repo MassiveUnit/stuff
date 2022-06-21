@@ -3,6 +3,8 @@ function RunScript()
 local player = game.Players.LocalPlayer
 local Animate = player.Character.Animate
 
+local Version = "1.2"	
+	
 local ChatColor = BrickColor.new("Bright red")
 
 function SendChatMessage(msg,color)
@@ -21,7 +23,7 @@ SendChatMessage("This script will have more updates and hopefully more games :)"
 -- Library Stuff--
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MassiveUnit/stuff/main/ui.lua"))()
 
-local Window = Library.CreateLib("Massive Unit's Hub", "DarkTheme")
+local Window = Library.CreateLib("Massive Unit's Hub | Version "..Version.."", "DarkTheme")
 -- yes --
 local FFSettings = Window:NewTab("Funky Friday")
 local FFSection = FFSettings:NewSection("Funky Friday")
