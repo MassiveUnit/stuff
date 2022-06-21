@@ -1,7 +1,4 @@
--- Credits to xHeptc for his Kavo UI Library
--- Made by Sevyy from V3rmillion
 
--- Prerequisite --
 function RunScript()
 local player = game.Players.LocalPlayer
 local Animate = player.Character.Animate
