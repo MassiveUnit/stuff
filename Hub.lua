@@ -30,7 +30,7 @@ local FFSection = FFSettings:NewSection("Funky Friday")
 FFSection:NewKeybind(
     "Teleport to Animdude Boss",
     "yes sex",
-    Enum.KeyCode.L,
+    Enum.KeyCode.P,
     function()
     SendChatMessage("Teleported to Animdude Boss",ChatColor)
         player.Character.HumanoidRootPart.CFrame = CFrame.new(-219.7686, 69.6844788, 5.25556374)
