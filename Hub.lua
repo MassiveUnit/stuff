@@ -6,7 +6,17 @@ local points
 local Version = "1.3"	
 points = 350
 local ChatColor = BrickColor.new("Bright red")
-
+makefolder("MUHUB")
+	
+function SendNotify(msg)
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "Massive Unit's Hub | Version "..Version..""; -- Required. Has to be a string!
+    Text = msg; -- Required. Has to be a string!
+    Icon = "rbxassetid://9583671056"; -- Optional, defaults to "" (no icon)
+    Duration = 5; -- Optional, defaults to 5 seconds
+})	
+end
+	
 function SendChatMessage(msg,color)
 	local c = color
 	local chat = game.StarterGui:SetCore("ChatMakeSystemMessage", {
@@ -17,8 +27,8 @@ function SendChatMessage(msg,color)
 	})
 end
 
-SendChatMessage("Thank you for using my script "..player.Name.." <3",ChatColor)
-SendChatMessage("This script will have more updates and hopefully more games :)",ChatColor)
+SendNotify("Thank you for using my script "..player.Name.." <3")
+SendNotify("This script will have more updates and hopefully more games :)")
 
 -- Library Stuff--
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MassiveUnit/stuff/main/ui.lua"))()
@@ -32,7 +42,7 @@ FFSection:NewKeybind(
     "yes sex",
     Enum.KeyCode.P,
     function()
-    SendChatMessage("Teleported to Animdude Boss",ChatColor)
+    SendNotify("Teleported to Animdude Boss")
         player.Character.HumanoidRootPart.CFrame = CFrame.new(-219.7686, 69.6844788, 5.25556374)
     end
 )
@@ -42,7 +52,7 @@ FFSection:NewKeybind(
     "yes sex",
     Enum.KeyCode.X,
     function()
-    SendChatMessage("Added 350 Points in Round",ChatColor)
+    SendNotify("Added 350 Points in Round")
         local args = {
     [1] = {
         [1] = "Server",
@@ -62,7 +72,7 @@ FFSection:NewButton(
     "Instant Full Score",
     "yes sex",
     function()
-    SendChatMessage("Adding 350 Points until you click Stop.",ChatColor)
+    SendNotify("Adding 350 Points until you click Stop.")
         local args = {
     [1] = {
         [1] = "Server",
@@ -88,7 +98,7 @@ FFSection:NewButton(
     "Stop the score shit",
     "yes sex",
     function()
-    SendChatMessage("Stopped Adding Points.",ChatColor)
+    SendNotify("Stopped Adding Points.")
 game:GetService("ReplicatedStorage").RF.Name = "RFOff"
 wait(1)
 game:GetService("ReplicatedStorage").RFOff.Name = "RF"
@@ -109,7 +119,7 @@ FFKeyBindSection:NewKeybind(
         [3] = "UpdateScore"
     },
     [2] = {
-        [1] = points
+        [1] = 350
     }
 }		
 end
@@ -127,7 +137,7 @@ FFKeyBindSection:NewKeybind(
         [3] = "UpdateScore"
     },
     [2] = {
-        [1] = points
+        [1] = 350
     }
 }		
 end
@@ -145,7 +155,7 @@ FFKeyBindSection:NewKeybind(
         [3] = "UpdateScore"
     },
     [2] = {
-        [1] = points
+        [1] = 350
     }
 }		
 end
@@ -163,116 +173,11 @@ FFKeyBindSection:NewKeybind(
         [3] = "UpdateScore"
     },
     [2] = {
-        [1] = points
+        [1] = 350
     }
 }		
 end
 )	
-
-FFKeyBindSection:NewLabel("Change Points")	
-FFKeyBindSection:NewButton(
-    "10",
-    "",
-    function()
-points = 10
-end
-)
-	
-FFKeyBindSection:NewButton(
-    "20",
-    "",
-    function()
-points = 30
-end
-)
-	
-FFKeyBindSection:NewButton(
-    "30",
-    "",
-    function()
-points = 30
-end
-)
-	
-FFKeyBindSection:NewButton(
-    "40",
-    "",
-    function()
-points = 40
-end
-)	
-
-FFKeyBindSection:NewButton(
-    "50",
-    "",
-    function()
-points = 50
-end
-)	
-
-FFKeyBindSection:NewButton(
-    "60",
-    "",
-    function()
-points = 60
-end
-)	
-
-FFKeyBindSection:NewButton(
-    "70",
-    "",
-    function()
-points = 70
-end
-)	
-
-FFKeyBindSection:NewButton(
-    "80",
-    "",
-    function()
-points = 80
-end
-)	
-
-FFKeyBindSection:NewButton(
-    "90",
-    "",
-    function()
-points = 90
-end
-)	
-
-FFKeyBindSection:NewButton(
-    "100",
-    "",
-    function()
-points = 100
-end
-)	
-
-FFKeyBindSection:NewButton(
-    "150",
-    "",
-    function()
-points = 150
-end
-)
-	
-FFKeyBindSection:NewButton(
-    "250",
-    "",
-    function()
-points = 250
-end
-)
-
-FFKeyBindSection:NewButton(
-    "350",
-    "",
-    function()
-points = 350
-end
-)
 	
 --ROBOWLING------------------------------------------------------------
 -----------------------------------------------------------------------
