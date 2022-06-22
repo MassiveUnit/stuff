@@ -170,118 +170,105 @@ end
 )	
 
 FFKeyBindSection:NewLabel("Change Points")	
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "10",
     "",
-    Enum.KeyCode.L,
     function()
 points = 10
 end
 )
 	
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "20",
     "",
-    Enum.KeyCode.L,
     function()
 points = 30
 end
 )
 	
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "30",
     "",
-    Enum.KeyCode.L,
     function()
 points = 30
 end
 )
 	
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "40",
     "",
-    Enum.KeyCode.L,
     function()
 points = 40
 end
 )	
 
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "50",
     "",
-    Enum.KeyCode.L,
     function()
 points = 50
 end
 )	
 
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "60",
     "",
-    Enum.KeyCode.L,
     function()
 points = 60
 end
 )	
 
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "70",
     "",
-    Enum.KeyCode.L,
     function()
 points = 70
 end
 )	
 
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "80",
     "",
-    Enum.KeyCode.L,
     function()
 points = 80
 end
 )	
 
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "90",
     "",
-    Enum.KeyCode.L,
     function()
 points = 90
 end
 )	
 
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "100",
     "",
-    Enum.KeyCode.L,
     function()
 points = 100
 end
 )	
 
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "150",
     "",
-    Enum.KeyCode.L,
     function()
 points = 150
 end
 )
 	
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "250",
     "",
-    Enum.KeyCode.L,
     function()
 points = 250
 end
 )
 
-FFKeyBindSection:NewKeybind(
+FFKeyBindSection:NewButton(
     "350",
     "",
-    Enum.KeyCode.L,
     function()
 points = 350
 end
