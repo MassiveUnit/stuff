@@ -1,10 +1,10 @@
---Version 1.2
+--Version 1.3
 function RunScript()
 local player = game.Players.LocalPlayer
 local Animate = player.Character.Animate
-
-local Version = "1.2"	
-	
+local points 
+local Version = "1.3"	
+points = 350
 local ChatColor = BrickColor.new("Bright red")
 
 function SendChatMessage(msg,color)
@@ -40,7 +40,7 @@ FFSection:NewKeybind(
 FFSection:NewKeybind(
     "Add points manually",
     "yes sex",
-    Enum.KeyCode.K,
+    Enum.KeyCode.X,
     function()
     SendChatMessage("Added 350 Points in Round",ChatColor)
         local args = {
@@ -95,6 +95,198 @@ game:GetService("ReplicatedStorage").RFOff.Name = "RF"
     end
 )
 
+local FFKeyBindSection = FFSettings:NewSection("Keybinds")
+FFKeyBindSection:NewLabel("Points by default is 350")
+FFKeyBindSection:NewKeybind(
+    "Left Key | Add Points",
+    "",
+    Enum.KeyCode.H,
+    function()
+    local args = {
+    [1] = {
+        [1] = "Server",
+        [2] = "RoundManager",
+        [3] = "UpdateScore"
+    },
+    [2] = {
+        [1] = points
+    }
+}		
+end
+)
+	
+FFKeyBindSection:NewKeybind(
+    "Down Key | Add Points",
+    "",
+    Enum.KeyCode.J,
+    function()
+    local args = {
+    [1] = {
+        [1] = "Server",
+        [2] = "RoundManager",
+        [3] = "UpdateScore"
+    },
+    [2] = {
+        [1] = points
+    }
+}		
+end
+)
+
+FFKeyBindSection:NewKeybind(
+    "Up Key | Add Points",
+    "",
+    Enum.KeyCode.K,
+    function()
+    local args = {
+    [1] = {
+        [1] = "Server",
+        [2] = "RoundManager",
+        [3] = "UpdateScore"
+    },
+    [2] = {
+        [1] = points
+    }
+}		
+end
+)
+	
+FFKeyBindSection:NewKeybind(
+    "Right Key | Add Points",
+    "",
+    Enum.KeyCode.L,
+    function()
+    local args = {
+    [1] = {
+        [1] = "Server",
+        [2] = "RoundManager",
+        [3] = "UpdateScore"
+    },
+    [2] = {
+        [1] = points
+    }
+}		
+end
+)	
+
+FFKeyBindSection:NewLabel("Change Points")	
+FFKeyBindSection:NewKeybind(
+    "10",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 10
+end
+)
+	
+FFKeyBindSection:NewKeybind(
+    "20",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 30
+end
+)
+	
+FFKeyBindSection:NewKeybind(
+    "30",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 30
+end
+)
+	
+FFKeyBindSection:NewKeybind(
+    "40",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 40
+end
+)	
+
+FFKeyBindSection:NewKeybind(
+    "50",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 50
+end
+)	
+
+FFKeyBindSection:NewKeybind(
+    "60",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 60
+end
+)	
+
+FFKeyBindSection:NewKeybind(
+    "70",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 70
+end
+)	
+
+FFKeyBindSection:NewKeybind(
+    "80",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 80
+end
+)	
+
+FFKeyBindSection:NewKeybind(
+    "90",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 90
+end
+)	
+
+FFKeyBindSection:NewKeybind(
+    "100",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 100
+end
+)	
+
+FFKeyBindSection:NewKeybind(
+    "150",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 150
+end
+)
+	
+FFKeyBindSection:NewKeybind(
+    "250",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 250
+end
+)
+
+FFKeyBindSection:NewKeybind(
+    "350",
+    "",
+    Enum.KeyCode.L,
+    function()
+points = 350
+end
+)
+	
 --ROBOWLING------------------------------------------------------------
 -----------------------------------------------------------------------
 
@@ -104,7 +296,7 @@ local RBSection = RBSettings:NewSection("RoBowling")
 RBSection:NewKeybind(
     "Make BowlingBall's HitBox Bigger",
     "yes sex",
-    Enum.KeyCode.J,
+    Enum.KeyCode.M,
     function()
     local plr = game:GetService("Players").LocalPlayer
     workspace[plr.Name].BowlingBall.HitBox.Size = Vector3.new(6, 6, 6)
