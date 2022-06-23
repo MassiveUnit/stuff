@@ -8,6 +8,10 @@ points = 350
 local ChatColor = BrickColor.new("Bright red")
 makefolder("MUHUB")
 	
+	
+local FunkyFriday = 6447798030
+local RoBowling = 340227283
+	
 function SendNotify(msg)
     game.StarterGui:SetCore("SendNotification", {
     Title = "Massive Unit's Hub | Version "..Version..""; -- Required. Has to be a string!
@@ -37,7 +41,12 @@ local Window = Library.CreateLib("Massive Unit's Hub | Version "..Version.."", "
 -- yes --
 local FFSettings = Window:NewTab("Funky Friday")
 local FFSection = FFSettings:NewSection("Funky Friday")
-	
+local FFKeyBindSection = FFSettings:NewSection("Keybinds")
+local RBSettings = Window:NewTab("RoBowling")
+local RBSection = RBSettings:NewSection("RoBowling")
+
+if game.PlaceId == FunkyFriday then
+RBSection:NewLabel("Join RoBowling to use this Section")
 FFSection:NewKeybind(
     "Teleport to Animdude Boss",
     "yes sex",
@@ -106,7 +115,6 @@ game:GetService("ReplicatedStorage").RFOff.Name = "RF"
     end
 )
 
-local FFKeyBindSection = FFSettings:NewSection("Keybinds")
 FFKeyBindSection:NewLabel("Points by default is 350")
 FFKeyBindSection:NewKeybind(
     "Left Key | Add Points",
@@ -179,12 +187,10 @@ FFKeyBindSection:NewKeybind(
 }		
 end
 )	
-	
+elseif game.PlaceId == RoBowling then	
+FFSection:NewLabel("Join Funky Friday to use this Section")
 --ROBOWLING------------------------------------------------------------
 -----------------------------------------------------------------------
-
-local RBSettings = Window:NewTab("RoBowling")
-local RBSection = RBSettings:NewSection("RoBowling")
 
 RBSection:NewKeybind(
     "Make BowlingBall's HitBox Bigger",
@@ -203,5 +209,5 @@ CreditSection:NewLabel("Discord : UnitIdk#5339")
 CreditSection:NewLabel("Made By MvssiveUnit")
 CreditSection:NewLabel("More shit will be added ok.")
 end
-
+end
 RunScript()
