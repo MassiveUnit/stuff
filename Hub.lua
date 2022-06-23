@@ -16,7 +16,7 @@ function SendNotify(msg)
     game.StarterGui:SetCore("SendNotification", {
     Title = "Massive Unit's Hub | Version "..Version..""; -- Required. Has to be a string!
     Text = msg; -- Required. Has to be a string!
-    Icon = "rbxassetid://9583671056"; -- Optional, defaults to "" (no icon)
+   -- Icon = "rbxassetid://9583671056"; -- Optional, defaults to "" (no icon)
     Duration = 5; -- Optional, defaults to 5 seconds
 })	
 end
