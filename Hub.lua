@@ -1,9 +1,9 @@
---Version 1.3
+--Version 1.3.1
 function RunScript()
 local player = game.Players.LocalPlayer
 local Animate = player.Character.Animate
 local points 
-local Version = "1.3"	
+local Version = "1.3.1"	
 points = 350
 local ChatColor = BrickColor.new("Bright red")
 makefolder("MUHUB")
@@ -37,6 +37,7 @@ local Window = Library.CreateLib("Massive Unit's Hub | Version "..Version.."", "
 -- yes --
 local FFSettings = Window:NewTab("Funky Friday")
 local FFSection = FFSettings:NewSection("Funky Friday")
+	
 FFSection:NewKeybind(
     "Teleport to Animdude Boss",
     "yes sex",
