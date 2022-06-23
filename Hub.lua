@@ -3,7 +3,7 @@ function RunScript()
 local player = game.Players.LocalPlayer
 local Animate = player.Character.Animate
 local points 
-local Version = "1.3.1"	
+local Version = "1.3.2"	
 points = 350
 local ChatColor = BrickColor.new("Bright red")
 
@@ -12,7 +12,7 @@ local ChatColor = BrickColor.new("Bright red")
 	
 local FunkyFriday = 6447798030
 local RoBowling = 340227283
-local PLSDONATE = 
+local PLSDONATE = 8737602449
 	
 function SendNotify(msg)
     game.StarterGui:SetCore("SendNotification", {
