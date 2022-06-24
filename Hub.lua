@@ -209,8 +209,8 @@ RBSection:NewKeybind(
 --------------
 elseif game.PlaceId == PLSDONATE then
 PLSDSection:NewButton(
-    "Anti-AFK Toggle"
-    "Makes you walk around the map in a loop"
+    "Anti-AFK Toggle",
+    "Makes you walk around the map in a loop",
     function()
     if toggle == false then
 	SendNotify("Anti-AFK is ON")
