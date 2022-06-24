@@ -39,7 +39,7 @@ SendNotify("This script will have more updates and hopefully more games :)")
 -- Library Stuff--
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MassiveUnit/stuff/main/ui.lua"))()
 
-local Window = Library.CreateLib("Massive Unit's Hub | Version "..Version.."", "DarkTheme")
+local Window = Library.CreateLib("\--\Massive Unit's Hub/--/", "Sentinel")
 -- yes --
 local FFSettings = Window:NewTab("Funky Friday")
 local FFSection = FFSettings:NewSection("Funky Friday")
