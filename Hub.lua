@@ -16,7 +16,7 @@ local PLSDONATE = 8737602449
 	
 function SendNotify(msg)
     game.StarterGui:SetCore("SendNotification", {
-    Title = "Massive Unit's Hub | Version "..Version..""; -- Required. Has to be a string!
+    Title = "Massive Unit's Hub"; -- Required. Has to be a string!
     Text = msg; -- Required. Has to be a string!
    -- Icon = "rbxassetid://9583671056"; -- Optional, defaults to "" (no icon)
     Duration = 5; -- Optional, defaults to 5 seconds
@@ -39,7 +39,7 @@ SendNotify("This script will have more updates and hopefully more games :)")
 -- Library Stuff--
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MassiveUnit/stuff/main/ui.lua"))()
 
-local Window = Library.CreateLib("\--\Massive Unit's Hub/--/", "Sentinel")
+local Window = Library.CreateLib("Massive Unit's Hub | "..Version.."", "Sentinel")
 -- yes --
 local FFSettings = Window:NewTab("Funky Friday")
 local FFSection = FFSettings:NewSection("Funky Friday")
