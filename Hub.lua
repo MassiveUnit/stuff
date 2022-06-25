@@ -134,7 +134,8 @@ FFKeyBindSection:NewKeybind(
     [2] = {
         [1] = 350
     }
-}		
+}
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))				
 end
 )
 	
@@ -152,7 +153,8 @@ FFKeyBindSection:NewKeybind(
     [2] = {
         [1] = 350
     }
-}		
+}
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))		
 end
 )
 
@@ -170,7 +172,8 @@ FFKeyBindSection:NewKeybind(
     [2] = {
         [1] = 350
     }
-}		
+}
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))	
 end
 )
 	
@@ -188,7 +191,8 @@ FFKeyBindSection:NewKeybind(
     [2] = {
         [1] = 350
     }
-}		
+}
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))		
 end
 )	
 elseif game.PlaceId == RoBowling then	
