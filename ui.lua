@@ -66,9 +66,9 @@ local themeStyles = {
     LightTheme = {
         SchemeColor = Color3.fromRGB(150, 150, 150),
         Background = Color3.fromRGB(255,255,255),
-        Header = Color3.fromRGB(200, 200, 200),
+        Header = Color3.fromRGB(50, 50, 50),
         TextColor = Color3.fromRGB(0,0,0),
-        ElementColor = Color3.fromRGB(224, 224, 224)
+        ElementColor = Color3.fromRGB(100, 100, 100)
     },
     BloodTheme = {
         SchemeColor = Color3.fromRGB(227, 27, 27),
