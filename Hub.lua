@@ -274,6 +274,17 @@ end
     workspace.ANTIAFKPART:Destroy()
     end	
     end
+)
+		
+local TabSettings = Window:NewTab("Settings")
+local SettingSection = TabSettings:NewSection("Settings")
+SettingSection:NewKeybind(
+    "Toggle GUI keybind",
+    "Show or hide GUI",
+    Enum.KeyCode.RightControl,
+    function()
+        Library:ToggleUI()
+    end
 )		
 
 local TabCredit = Window:NewTab("Credits")
