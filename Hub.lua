@@ -49,6 +49,17 @@ local RBSection = RBSettings:NewSection("RoBowling")
 local PLSDSettings = Window:NewTab("PLS DONATE")
 local PLSDSection = PLSDSettings:NewSection("PLS DONATE")
 
+local TabSettings = Window:NewTab("Settings")
+local SettingSection = TabSettings:NewSection("Settings")
+SettingSection:NewKeybind(
+    "Toggle GUI keybind",
+    "Show or hide GUI",
+    Enum.KeyCode.RightControl,
+    function()
+        Library:ToggleUI()
+    end
+)
+
 if game.PlaceId == FunkyFriday then
 RBSection:NewLabel("Join RoBowling to use this Section")
 FFSection:NewKeybind(
@@ -274,18 +285,7 @@ end
     workspace.ANTIAFKPART:Destroy()
     end	
     end
-)
-		
-local TabSettings = Window:NewTab("Settings")
-local SettingSection = TabSettings:NewSection("Settings")
-SettingSection:NewKeybind(
-    "Toggle GUI keybind",
-    "Show or hide GUI",
-    Enum.KeyCode.RightControl,
-    function()
-        Library:ToggleUI()
-    end
-)		
+)			
 
 local TabCredit = Window:NewTab("Credits")
 local CreditSection = TabCredit:NewSection("Credits")
