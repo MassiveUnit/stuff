@@ -7,8 +7,8 @@ local Version = "1.3.3"
 points = 350
 local ChatColor = BrickColor.new("Bright red")
 
-	
-	
+local pointstoggle	
+pointstoggle = false	
 	
 local FunkyFriday = 6447798030
 local RoBowling = 340227283
@@ -129,6 +129,19 @@ wait(1)
 game:GetService("ReplicatedStorage").RFOff.Name = "RF"
     end
 )
+		
+FFSection:NewButton(
+    "Toggle KeyBinds",
+    "yes sex",
+    function()
+    if pointstoggle == false then
+       pointstoggle = true
+       SendNotify("Toggle ON")
+    elseif pointstoggle == true then
+       pointstoggle = false
+       SendNotify("Toggle OFF")
+    end
+)
 
 FFKeyBindSection:NewLabel("Points by default is 350")
 FFKeyBindSection:NewKeybind(
@@ -146,7 +159,10 @@ FFKeyBindSection:NewKeybind(
         [1] = 350
     }
 }
-game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))				
+if pointstoggle == true then				
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+elseif pointstoggle == false
+print("_")
 end
 )
 	
@@ -165,7 +181,10 @@ FFKeyBindSection:NewKeybind(
         [1] = 350
     }
 }
-game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))		
+if pointstoggle == true then				
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+elseif pointstoggle == false
+print("_")
 end
 )
 
@@ -184,7 +203,10 @@ FFKeyBindSection:NewKeybind(
         [1] = 350
     }
 }
-game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))	
+if pointstoggle == true then				
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+elseif pointstoggle == false
+print("_")
 end
 )
 	
@@ -203,7 +225,10 @@ FFKeyBindSection:NewKeybind(
         [1] = 350
     }
 }
-game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))		
+if pointstoggle == true then				
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+elseif pointstoggle == false
+print("_")
 end
 )	
 elseif game.PlaceId == RoBowling then	
