@@ -141,6 +141,7 @@ FFSection:NewButton(
        pointstoggle = false
        SendNotify("Toggle OFF")
     end
+    end
 )
 
 FFKeyBindSection:NewLabel("Points by default is 350")
@@ -161,8 +162,9 @@ FFKeyBindSection:NewKeybind(
 }
 if pointstoggle == true then				
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
-elseif pointstoggle == false
+elseif pointstoggle == false then
 print("_")
+end
 end
 )
 	
@@ -183,8 +185,9 @@ FFKeyBindSection:NewKeybind(
 }
 if pointstoggle == true then				
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
-elseif pointstoggle == false
+elseif pointstoggle == false then
 print("_")
+end
 end
 )
 
@@ -205,8 +208,9 @@ FFKeyBindSection:NewKeybind(
 }
 if pointstoggle == true then				
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
-elseif pointstoggle == false
+elseif pointstoggle == false then
 print("_")
+end
 end
 )
 	
@@ -227,8 +231,9 @@ FFKeyBindSection:NewKeybind(
 }
 if pointstoggle == true then				
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
-elseif pointstoggle == false
+elseif pointstoggle == false then
 print("_")
+end
 end
 )	
 elseif game.PlaceId == RoBowling then	
@@ -247,70 +252,7 @@ RBSection:NewKeybind(
 )
 --PLS DONATE--
 --------------
-elseif game.PlaceId == PLSDONATE then
-PLSDSection:NewButton(
-    "Anti-AFK Toggle",
-    "Makes you walk around the map in a loop",
-    function()
-    if toggle == false then
-	SendNotify("Anti-AFK is ON")
-       toggle = true
-local player = game.Players.LocalPlayer
-local character = player.Character
-local hum = character.Humanoid
-
-local one = Vector3.new(42,3,43)
-local two = Vector3.new(2,3,56)
-local three = Vector3.new(-17,3,90)
-local four = Vector3.new(-9,3,129)
-local five = Vector3.new(25,3,158)
-local six = Vector3.new(78,3,146)
-local seven = Vector3.new(96,3,102)
-local eight = Vector3.new(81,3,61)
-local part = Instance.new("Part")
-
-part.Parent = workspace
-part.Anchored = true
-part.CanCollide = false
-part.BrickColor = BrickColor.new("Bright red")
-part.Name = "ANTIAFKPART"
-part.Size = Vector3.new(1,10,1)
-
-while toggle == true do
-SendNotify("Looping Around the map")
-hum:MoveTo(one)
-part.Position = one
-wait(5)
-hum:MoveTo(two)
-part.Position = two
-wait(5)
-hum:MoveTo(three)
-part.Position = three
-wait(5)
-hum:MoveTo(four)
-part.Position = four
-wait(5)
-hum:MoveTo(five)
-part.Position = five
-wait(5)
-hum:MoveTo(six)
-part.Position = six
-wait(5)
-hum:MoveTo(seven)
-part.Position = seven
-wait(5)
-hum:MoveTo(eight)
-part.Position = eight
-wait(5)
-part:Destroy()
-end		
-    elseif toggle == true then
-       toggle = false
-    SendNotify("Anti-AFK is OFF")
-    workspace.ANTIAFKPART:Destroy()
-    end	
-    end
-)			
+end
 
 local TabCredit = Window:NewTab("Credits")
 local CreditSection = TabCredit:NewSection("Credits")
@@ -319,5 +261,5 @@ CreditSection:NewLabel("Discord : UnitIdk#5339")
 CreditSection:NewLabel("Made By MvssiveUnit")
 CreditSection:NewLabel("More shit will be added ok.")
 end
-end
+
 RunScript()
