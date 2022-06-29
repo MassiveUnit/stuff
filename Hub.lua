@@ -2,7 +2,7 @@
 -- You can suggest changes with a pull request or something
 local player = game.Players.LocalPlayer
 
-local V = "1.3.5"
+local V = "1.3.6"
 
 local repo = 'https://raw.githubusercontent.com/MassiveUnit/anotherthing/main/'
 
@@ -53,6 +53,7 @@ function AddPointsFF_AF()
     }
 }
 
+if AutoFarmToggle == true then
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
