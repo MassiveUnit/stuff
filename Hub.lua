@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 --BRHU UPDATEsddddddddddddddddddddddddd
-local V = "1.3.6"
+local V = "1.3.7"
 
 local repo = 'https://raw.githubusercontent.com/MassiveUnit/anotherthing/main/'
 
