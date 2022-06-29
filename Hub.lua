@@ -64,6 +64,7 @@ game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
 end
+end
 
 SendNotify("Thank you for using my script "..player.Name.." <3")
 SendNotify("This script will have more updates and hopefully more games :)")
