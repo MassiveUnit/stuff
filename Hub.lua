@@ -1,5 +1,3 @@
--- New example script written by wally
--- You can suggest changes with a pull request or something
 local player = game.Players.LocalPlayer
 
 local V = "1.3.6"
