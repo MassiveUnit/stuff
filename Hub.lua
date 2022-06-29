@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 --BRHU UPDATEsddddddddddddddddddddddddd
-local V = "1.3.8"
+local V = "1.3.9"
 
 local repo = 'https://raw.githubusercontent.com/MassiveUnit/anotherthing/main/'
 
@@ -51,7 +51,7 @@ function AddPointsFF_AF()
     }
 }
 
-if AutoFarmToggle == true then
+if AutoFarmToggle == true or InstaPoint == true then
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
@@ -174,7 +174,7 @@ LeftGroupBox:AddLabel('Right Key'):AddKeyPicker('RightKeybind', {
 LeftGroupBox:AddLabel('-------------AutoFarm-------------')
 
 LeftGroupBox:AddToggle('AutoFarmThing', {
-    Text = 'Auto-Farm / USE AUTO PLAYER',
+    Text = 'Auto-Farm | USE AUTO-PLAYER',
     Default = false, -- Default value (true / false)
     Tooltip = 'Teleports to Animdude Boss and spams Instant Full Score', -- Information shown when you hover over the toggle
 })
