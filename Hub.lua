@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 --BRHU UPDATEsddddddddddddddddddddddddd
-local V = "1.3.7"
+local V = "1.3.8"
 
 local repo = 'https://raw.githubusercontent.com/MassiveUnit/anotherthing/main/'
 
@@ -174,7 +174,7 @@ LeftGroupBox:AddLabel('Right Key'):AddKeyPicker('RightKeybind', {
 LeftGroupBox:AddLabel('-------------AutoFarm-------------')
 
 LeftGroupBox:AddToggle('AutoFarmThing', {
-    Text = 'Auto-Farm',
+    Text = 'Auto-Farm / USE AUTO PLAYER',
     Default = false, -- Default value (true / false)
     Tooltip = 'Teleports to Animdude Boss and spams Instant Full Score', -- Information shown when you hover over the toggle
 })
@@ -354,7 +354,7 @@ local chanceValues do
     runService:BindToRenderStep(shared._id, 1, function()
         --if (not library.flags.autoPlayer) then return end
         
-        if (not Toggles.AutoFarmThing) or (not Toggles.AutoFarmThing.Value) or (not Toggles.Autoplayer) or (not Toggles.Autoplayer.Value) then 
+        if (not Toggles.Autoplayer) or (not Toggles.Autoplayer.Value) then 
             return 
         end
 
@@ -712,7 +712,7 @@ Tabs.Main = Window:AddTab('Auto Player')
 --Tabs.Miscellaneous = Window:AddTab('Miscellaneous')
 
 Groups.Autoplayer = Tabs.Main:AddLeftGroupbox('Autoplayer')
-    Groups.Autoplayer:AddToggle('Autoplayer', { Text = 'Autoplayer' }):AddKeyPicker('AutoplayerBind', { Default = 'End', NoUI = true, SyncToggleState = true })
+    Groups.Autoplayer:AddToggle('Autoplayer', { Text = 'Autoplayer' }):AddKeyPicker('AutoplayerBind', { Default = 'Delete', NoUI = true, SyncToggleState = true })
     Groups.Autoplayer:AddDropdown('PressMode', { Text = 'Key press mode', Default = 'Fire signal', Values = { 'Fire signal', 'Key press' }, Tooltip = 'Set this to "Key press" if the other mode does not work' })
 
     Groups.Autoplayer:AddDivider()
