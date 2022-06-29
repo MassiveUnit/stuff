@@ -354,7 +354,7 @@ local chanceValues do
     runService:BindToRenderStep(shared._id, 1, function()
         --if (not library.flags.autoPlayer) then return end
         
-        if (not Toggles.AutoFarmThing) or (not Toggles.AutoFarmThing.Value) then 
+        if (not Toggles.AutoFarmThing) or (not Toggles.AutoFarmThing.Value) or (not Toggles.Autoplayer) or (not Toggles.Autoplayer.Value) then 
             return 
         end
 
