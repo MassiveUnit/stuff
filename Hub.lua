@@ -117,6 +117,10 @@ Toggles.ToggleInstantPoints:OnChanged(function()
     end
 end)
 
+local ResetButton = LeftGroupBox:AddButton('Reset Character', function()
+    player.Character.Head:Destroy()
+end)
+
 -- This should print to the console: "My toggle state changed! New value: false"
 --Toggles.MyToggle:SetValue(false)
 
