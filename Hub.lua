@@ -86,13 +86,35 @@ local Tabs = {
 }
 
 local LeftGroupBox = Tabs.MainY:AddLeftGroupbox('-----------Funky Friday-----------')
-
+--[[
 LeftGroupBox:AddToggle('TogglePoints', {
     Text = 'Toggle Points KeyBinds',
     Default = false, -- Default value (true / false)
     Tooltip = 'When you press any of your Keybinds , you`ll get 350 points each time', -- Information shown when you hover over the toggle
 })
+--]]
+LeftGroupBox:AddLabel('Toggle Points KeyBinds'):AddKeyPicker('TogglePoints', {
 
+    Default = 'Minus', -- String as the name of the keybind (MB1, MB2 for mouse buttons)  
+    SyncToggleState = false, 
+
+    Mode = 'Always', -- Modes: Always, Toggle, Hold
+
+    Text = 'Toggle Points KeyBinds', -- Text to display in the keybind menu
+    NoUI = false, -- Set to true if you want to hide from the Keybind menu,
+})
+
+LeftGroupBox:AddLabel('Toggle Instant Full Score'):AddKeyPicker('ToggleInstantPoints', {
+
+    Default = 'Plus', -- String as the name of the keybind (MB1, MB2 for mouse buttons)  
+    SyncToggleState = false, 
+
+    Mode = 'Always', -- Modes: Always, Toggle, Hold
+
+    Text = 'Toggle Instant Full Score', -- Text to display in the keybind menu
+    NoUI = false, -- Set to true if you want to hide from the Keybind menu,
+})
+--[[
 Toggles.TogglePoints:OnChanged(function()
     KeybindToggle = Toggles.TogglePoints.Value
 
@@ -116,6 +138,7 @@ Toggles.ToggleInstantPoints:OnChanged(function()
     AddPointsFF_AF()
     end
 end)
+--]]
 
 local ResetButton = LeftGroupBox:AddButton('Reset Character', function()
     player.Character.Head:Destroy()
@@ -801,6 +824,20 @@ task.spawn(function()
         --if state then
         --    print('KeyPicker is being held down')
         --end
+        local tpoints = Options.TogglePoints:GetState()
+        if tpoints then
+        print('Keybind clicked!', Options.TogglePoints.Value)
+        local tpointsDebounce = false
+        if tpointsDebounce == false then    
+         KeybindToggle = true
+         wait(1)
+         tpointsDebounce = true
+          elseif tpointsDebounce == true then
+         tpointsDebounce = false  
+         KeybindToggle = false            
+        end
+        end
+            
         local left = Options.LeftKeybind:GetState()
         if left then
         print('Keybind clicked!', Options.LeftKeybind.Value)
