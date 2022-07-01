@@ -98,7 +98,7 @@ LeftGroupBox:AddLabel('Toggle Points KeyBinds'):AddKeyPicker('TogglePoints', {
     Default = 'Minus', -- String as the name of the keybind (MB1, MB2 for mouse buttons)  
     SyncToggleState = false, 
 
-    Mode = 'Always', -- Modes: Always, Toggle, Hold
+    Mode = 'Toggle', -- Modes: Always, Toggle, Hold
 
     Text = 'Toggle Points KeyBinds', -- Text to display in the keybind menu
     NoUI = false, -- Set to true if you want to hide from the Keybind menu,
@@ -109,7 +109,7 @@ LeftGroupBox:AddLabel('Toggle Instant Full Score'):AddKeyPicker('ToggleInstantPo
     Default = 'Plus', -- String as the name of the keybind (MB1, MB2 for mouse buttons)  
     SyncToggleState = false, 
 
-    Mode = 'Always', -- Modes: Always, Toggle, Hold
+    Mode = 'Toggle', -- Modes: Always, Toggle, Hold
 
     Text = 'Toggle Instant Full Score', -- Text to display in the keybind menu
     NoUI = false, -- Set to true if you want to hide from the Keybind menu,
