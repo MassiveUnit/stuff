@@ -25,7 +25,7 @@ function SendNotify(msg)
 })	
 end
 
-function AddPointsFF(amount)
+function AddPointsFF()
         local args = {
     [1] = {
         [1] = "Server",
@@ -33,7 +33,7 @@ function AddPointsFF(amount)
         [3] = "UpdateScore"
     },
     [2] = {
-        [1] = amount
+        [1] = CustomScore
     }
 }
 if KeybindToggle == true then
