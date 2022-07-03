@@ -1,7 +1,7 @@
 local player = game.Players.LocalPlayer
 --BRHU UPDATEsddddddddddddddddddddddddd
 local V = "1.3.9"
-
+local HubName = "UN1T.GA HUB"
 local repo = 'https://raw.githubusercontent.com/MassiveUnit/anotherthing/main/'
 
 local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
@@ -16,7 +16,7 @@ local AutoFarmToggle
 
 function SendNotify(msg)
     game.StarterGui:SetCore("SendNotification", {
-    Title = "Massive Unit's Hub"; -- Required. Has to be a string!
+    Title = HubName; -- Required. Has to be a string!
     Text = msg; -- Required. Has to be a string!
    -- Icon = "rbxassetid://9583671056"; -- Optional, defaults to "" (no icon)
     Duration = 5; -- Optional, defaults to 5 seconds
@@ -73,7 +73,7 @@ local Window = Library:CreateWindow({
     -- Position and Size are also valid options here
     -- but you do not need to define them unless you are changing them :)
 
-    Title = 'Massive Unit`s Hub | Version '..V..'',
+    Title = HubName..' | Version '..V..'',
     Center = true, 
     AutoShow = true,
 })
