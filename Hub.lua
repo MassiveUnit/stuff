@@ -1,7 +1,8 @@
 local player = game.Players.LocalPlayer
 --BRHU UPDATEsddddddddddddddddddddddddd
-local V = "1.3.9"
-local HubName = "UN1T.GA HUB"
+local V = "1.4.1"
+local emptyfill = "                   "
+local HubName = emptyfill.."UN1T.GA HUB"
 local repo = 'https://raw.githubusercontent.com/MassiveUnit/anotherthing/main/'
 
 local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
@@ -11,7 +12,8 @@ local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 local KeybindToggle
 local InstaPoint
 local AutoFarmToggle
-
+local CustomScore 
+CustomScore = 100
 
 
 function SendNotify(msg)
@@ -23,7 +25,7 @@ function SendNotify(msg)
 })	
 end
 
-function AddPointsFF()
+function AddPointsFF(amount)
         local args = {
     [1] = {
         [1] = "Server",
@@ -31,7 +33,7 @@ function AddPointsFF()
         [3] = "UpdateScore"
     },
     [2] = {
-        [1] = 350
+        [1] = amount
     }
 }
 if KeybindToggle == true then
@@ -52,6 +54,105 @@ function AddPointsFF_AF()
 }
 
 if AutoFarmToggle == true or InstaPoint == true then
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
 game:GetService("ReplicatedStorage").RF:InvokeServer(unpack(args))
@@ -85,7 +186,8 @@ local Tabs = {
     ['UI Settings'] = Window:AddTab('UI Settings'),
 }
 
-local LeftGroupBox = Tabs.MainY:AddLeftGroupbox('-----------Funky Friday-----------')
+local LeftGroupBox = Tabs.MainY:AddLeftGroupbox('           [Main Shit]')
+local RightGroupBox = Tabs.MainY:AddRightGroupbox('      [Custom Score Settings]')
 
 LeftGroupBox:AddToggle('TogglePoints', {
     Text = 'Toggle Points KeyBinds',
@@ -119,9 +221,70 @@ Toggles.ToggleInstantPoints:OnChanged(function()
     end
 end)
 
+LeftGroupBox:AddLabel('          [Local Player]')
 
 local ResetButton = LeftGroupBox:AddButton('Reset Character', function()
     player.Character.Head:Destroy()
+end)
+
+local Score10 = RightGroupBox:AddButton('Chance Custom Score : 10', function()
+    CustomScore = 10
+	SendNotify("Custom Score Changed to "..CustomScore)
+end)
+
+local Score20 = RightGroupBox:AddButton('Chance Custom Score : 20', function()
+    CustomScore = 20
+SendNotify("Custom Score Changed to "..CustomScore)
+end)
+
+local Score30 = RightGroupBox:AddButton('Chance Custom Score : 30', function()
+    CustomScore = 30
+	SendNotify("Custom Score Changed to "..CustomScore)
+end)
+
+local Score40 = RightGroupBox:AddButton('Chance Custom Score : 40', function()
+    CustomScore = 40
+	SendNotify("Custom Score Changed to "..CustomScore)
+end)
+
+local Score50 = RightGroupBox:AddButton('Chance Custom Score : 50', function()
+    CustomScore = 50
+	SendNotify("Custom Score Changed to "..CustomScore)
+end)
+
+local Score60 = RightGroupBox:AddButton('Chance Custom Score : 60', function()
+    CustomScore = 60
+	SendNotify("Custom Score Changed to "..CustomScore)
+end)
+
+local Score70 = RightGroupBox:AddButton('Chance Custom Score : 70', function()
+    CustomScore = 70
+	SendNotify("Custom Score Changed to "..CustomScore)
+end)
+
+local Score80 = RightGroupBox:AddButton('Chance Custom Score : 80', function()
+    CustomScore = 80
+	SendNotify("Custom Score Changed to "..CustomScore)
+end)
+
+local Score90 = RightGroupBox:AddButton('Chance Custom Score : 90', function()
+    CustomScore = 90
+	SendNotify("Custom Score Changed to "..CustomScore)
+end)
+
+local Score100 = RightGroupBox:AddButton('Chance Custom Score : 100', function()
+    CustomScore = 100
+	SendNotify("Custom Score Changed to "..CustomScore)
+end)
+
+local Score200 = RightGroupBox:AddButton('Chance Custom Score : 200', function()
+    CustomScore = 200
+	SendNotify("Custom Score Changed to "..CustomScore)
+end)
+
+local Score350 = RightGroupBox:AddButton('Chance Custom Score : 350', function()
+    CustomScore = 350
+	SendNotify("Custom Score Changed to "..CustomScore)
 end)
 
 -- This should print to the console: "My toggle state changed! New value: false"
@@ -130,7 +293,7 @@ end)
 -- Groupbox:AddButton
 -- Arguments: Text, Callback
 
-LeftGroupBox:AddLabel('-------------Keybinds-------------')
+LeftGroupBox:AddLabel('            [Keybinds]')
 
 LeftGroupBox:AddLabel('Left Key'):AddKeyPicker('LeftKeybind', {
 
@@ -178,7 +341,7 @@ LeftGroupBox:AddLabel('Right Key'):AddKeyPicker('RightKeybind', {
 
 -- OnClick is only fired when you press the keybind and the mode is Toggle
 -- Otherwise, you will have to use Keybind:GetState()
-LeftGroupBox:AddLabel('-------------AutoFarm-------------')
+LeftGroupBox:AddLabel('            [AutoFarm]')
 
 LeftGroupBox:AddToggle('AutoFarmThing', {
     Text = 'Auto-Farm | USE AUTO-PLAYER',
