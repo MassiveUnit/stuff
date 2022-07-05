@@ -290,7 +290,7 @@ while true do
 
     counter = counter + 1
     if counter > 6 then
-        fail(string.format('Failed to load game dependencies. Details: %s, %s, %s', type(framework), typeof(scrollHandler), type(network)))
+        --fail(string.format('Failed to load game dependencies. Details: %s, %s, %s', type(framework), typeof(scrollHandler), type(network)))
     end
     wait(1)
 end
