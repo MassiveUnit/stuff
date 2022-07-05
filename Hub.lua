@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 --BRHU UPDATEsddddddddddddddddddddddddd
-local V = "1.4.1"
+local V = "1.4.2"
 local emptyfill = "                   "
 local HubName = emptyfill.."UN1T.GA HUB"
 local repo = 'https://raw.githubusercontent.com/MassiveUnit/anotherthing/main/'
